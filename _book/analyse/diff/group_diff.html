@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3.2.1 样品差异表达检测 · GitBook</title>
+        <title>3.2.2 多组差异表达分析比较 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -77,10 +77,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="group_diff.html" />
+    <link rel="next" href="genom_diff.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="check_diff.html" />
     
 
     </head>
@@ -453,7 +453,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.2.1" data-path="check_diff.html">
+        <li class="chapter " data-level="1.4.2.1" data-path="check_diff.html">
             
                 <a href="check_diff.html">
             
@@ -466,7 +466,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2.2" data-path="group_diff.html">
+        <li class="chapter active" data-level="1.4.2.2" data-path="group_diff.html">
             
                 <a href="group_diff.html">
             
@@ -590,7 +590,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >3.2.1 样品差异表达检测</a>
+        <a href="../.." >3.2.2 多组差异表达分析比较</a>
     </h1>
 </div>
 
@@ -606,34 +606,12 @@
                                 <section class="normal markdown-section">
                                 
                                 <div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
-<li><div><a href="#321-&#x6837;&#x54C1;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x68C0;&#x6D4B;">3.2.1 &#x6837;&#x54C1;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x68C0;&#x6D4B;</a><i></i></div></li>
+<li><div><a href="#322-&#x591A;&#x7EC4;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;&#x6BD4;&#x8F83;">3.2.2 &#x591A;&#x7EC4;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;&#x6BD4;&#x8F83;</a><i></i></div></li>
 </ul>
 </div>
 
-<h1 id="321-&#x6837;&#x54C1;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x68C0;&#x6D4B;">3.2.1 &#x6837;&#x54C1;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x68C0;&#x6D4B;</h1>
-<p><font face="&#x5FAE;&#x8F6F;&#x96C5;&#x9ED1;">&#x2003;&#x2003;&#x6211;&#x4EEC;&#x91C7;&#x7528; DESeq &#x5BF9;&#x57FA;&#x56E0;&#x8868;&#x8FBE;&#x8FDB;&#x884C;&#x5DEE;&#x5F02;&#x5206;&#x6790;&#xFF0C;&#x7B5B;&#x9009;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x57FA;&#x56E0;&#x6761;&#x4EF6;&#x4E3A;&#xFF1A;&#x8868;&#x8FBE;&#x5DEE;&#x5F02;&#x500D;&#x6570; |log2FoldChange| &gt; 1 &#xFF0C;&#x663E;&#x8457;&#x6027;P-value&lt;0.05 ,&#x90E8;&#x5206;&#x5DEE;&#x5F02;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x89C1;&#x8868;2&#xFF0C;&#x4E0D;&#x540C;&#x5206;&#x7EC4;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x57FA;&#x56E0;&#x7EDF;&#x8BA1;&#x7ED3;&#x679C;&#x89C1;&#x8868;1</font><br></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">id</th>
-<th style="text-align:center">baseMean</th>
-<th style="text-align:center">baseMeanA</th>
-<th style="text-align:center">baseMeanB</th>
-<th style="text-align:center">foldChange</th>
-<th style="text-align:center">log2FoldChange</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">xxxxx</td>
-<td style="text-align:center">12121212</td>
-<td style="text-align:center">12121212</td>
-<td style="text-align:center">2222222</td>
-<td style="text-align:center">22222222</td>
-<td style="text-align:center">2222</td>
-</tr>
-</tbody>
-</table>
+<h1 id="322-&#x591A;&#x7EC4;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;&#x6BD4;&#x8F83;">3.2.2 &#x591A;&#x7EC4;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;&#x6BD4;&#x8F83;</h1>
+<p><font face="&#x5FAE;&#x8F6F;&#x96C5;&#x9ED1;">&#x2003;&#x2003;&#x6839;&#x636E;&#x5DEE;&#x5F02;&#x5206;&#x6790;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x7EDF;&#x8BA1;&#x5404;&#x6BD4;&#x8F83;&#x7EC4;&#x4E4B;&#x95F4;&#x7684;&#x5171;&#x6709;&#x7279;&#x6709;&#x5DEE;&#x5F02;&#x57FA;&#x56E0;&#x6570;&#x91CF;&#xFF0C;&#x5982;&#x56FE;12&#x3002;&#x7EF4;&#x6069;&#x56FE;&#xFF08;&#x4EC5;&#x63D0;&#x4F9B;&#x4E24;&#x7EC4;&#x3001; &#x4E09;&#x7EC4;&#x3001; &#x56DB;&#x7EC4;&#x548C;&#x4E94;&#x7EC4;&#x6BD4;&#x8F83;&#x7684;&#x7EF4;&#x6069;&#x56FE;&#xFF09;&#x5C55;&#x793A;&#x4E86;&#x5404;&#x6BD4;&#x8F83;&#x7EC4;&#x95F4;&#x5DEE;&#x5F02;&#x57FA;&#x56E0;&#x7684;&#x4E2A;&#x6570;&#xFF0C;&#x4EE5;&#x53CA;&#x6BD4;&#x8F83;&#x7EC4;&#x95F4;&#x7684;&#x91CD;&#x53E0;&#x5173;&#x7CFB;&#xFF0C;Upset&#x56FE;&#xFF08;&#x4EC5;&#x63D0;&#x4F9B;&#x4E24;&#x7EC4;&#x4EE5;&#x4E0A;&#x6BD4;&#x8F83;&#x7684;&#x77E9;&#x9635;&#x56FE;&#xFF09;&#x5C55;&#x793A;&#x4E86;&#x4E24;&#x4E24;&#x6BD4;&#x8F83;&#x7EC4;&#x95F4;&#x5171;&#x6709;&#x7684;&#x5DEE;&#x5F02;&#x57FA;&#x56E0;&#x6570;&#x76EE;</font><br></p>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -662,12 +640,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 3.2 表达差异分析">
+                <a href="check_diff.html" class="navigation navigation-prev " aria-label="Previous page: 3.2.1 样品差异表达检测">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="group_diff.html" class="navigation navigation-next " aria-label="Next page: 3.2.2 多组差异表达分析比较">
+                <a href="genom_diff.html" class="navigation navigation-next " aria-label="Next page: 3.2.3 聚类分析">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -678,7 +656,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.2.1 样品差异表达检测","level":"1.4.2.1","depth":3,"next":{"title":"3.2.2 多组差异表达分析比较","level":"1.4.2.2","depth":3,"path":"analyse/diff/group_diff.md","ref":"analyse/diff/group_diff.md","articles":[]},"previous":{"title":"3.2 表达差异分析","level":"1.4.2","depth":2,"path":"analyse/diff/README.md","ref":"analyse/diff/README.md","articles":[{"title":"3.2.1 样品差异表达检测","level":"1.4.2.1","depth":3,"path":"analyse/diff/check_diff.md","ref":"analyse/diff/check_diff.md","articles":[]},{"title":"3.2.2 多组差异表达分析比较","level":"1.4.2.2","depth":3,"path":"analyse/diff/group_diff.md","ref":"analyse/diff/group_diff.md","articles":[]},{"title":"3.2.3 聚类分析","level":"1.4.2.3","depth":3,"path":"analyse/diff/genom_diff.md","ref":"analyse/diff/genom_diff.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mermaid-gb3","chapter-fold","expandable-chapters","popup","page-treeview","livereload"],"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"chapter-fold":{},"livereload":{},"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"file/logo.png","style":"background: none; max-height: 30px; min-height: 30px"},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"analyse/diff/check_diff.md","mtime":"2021-05-06T12:28:44.632Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-06T11:59:46.245Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.2.2 多组差异表达分析比较","level":"1.4.2.2","depth":3,"next":{"title":"3.2.3 聚类分析","level":"1.4.2.3","depth":3,"path":"analyse/diff/genom_diff.md","ref":"analyse/diff/genom_diff.md","articles":[]},"previous":{"title":"3.2.1 样品差异表达检测","level":"1.4.2.1","depth":3,"path":"analyse/diff/check_diff.md","ref":"analyse/diff/check_diff.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mermaid-gb3","chapter-fold","expandable-chapters","popup","page-treeview","livereload"],"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"chapter-fold":{},"livereload":{},"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"file/logo.png","style":"background: none; max-height: 30px; min-height: 30px"},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"analyse/diff/group_diff.md","mtime":"2021-05-06T12:43:35.435Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-06T11:59:46.245Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
