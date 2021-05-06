@@ -1,0 +1,703 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.1.2 FPKM密度分布 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="correlation_analyse.html" />
+    
+    
+    <link rel="prev" href="count_analyse.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../introduce/">
+            
+                <a href="../../introduce/">
+            
+                    
+                    第一部分 项目概况
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../introduce/index1.html">
+            
+                <a href="../../introduce/index1.html">
+            
+                    
+                    1.1 项目概况
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../introduce/index2.html">
+            
+                <a href="../../introduce/index2.html">
+            
+                    
+                    1.2 实验流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../introduce/index3.html">
+            
+                <a href="../../introduce/index3.html">
+            
+                    
+                    1.3 参考基因组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../introduce/index4.html">
+            
+                <a href="../../introduce/index4.html">
+            
+                    
+                    1.4 有参转录组分析流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../base/">
+            
+                <a href="../../base/">
+            
+                    
+                    第二部分 原始数据整理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../base/origin/">
+            
+                <a href="../../base/origin/">
+            
+                    
+                    2.1 原始数据整理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../base/origin/library_origin.html">
+            
+                <a href="../../base/origin/library_origin.html">
+            
+                    
+                    2.1.1 文库基本情况
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../base/origin/data_origin.html">
+            
+                <a href="../../base/origin/data_origin.html">
+            
+                    
+                    2.1.2 数据整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../base/origin/filter_origin.html">
+            
+                <a href="../../base/origin/filter_origin.html">
+            
+                    
+                    2.1.3 数据过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../base/origin/quality_origin.html">
+            
+                <a href="../../base/origin/quality_origin.html">
+            
+                    
+                    2.1.4 碱基质量分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../../base/origin/content_origin.html">
+            
+                <a href="../../base/origin/content_origin.html">
+            
+                    
+                    2.1.5 碱基含量分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../base/blast/">
+            
+                <a href="../../base/blast/">
+            
+                    
+                    2.2 比对分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../base/blast/result_blast.html">
+            
+                <a href="../../base/blast/result_blast.html">
+            
+                    
+                    2.2.1 比对结果基本统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../base/blast/area_blast.html">
+            
+                <a href="../../base/blast/area_blast.html">
+            
+                    
+                    2.2.2 比对区域分布统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../base/blast/cover_blast.html">
+            
+                <a href="../../base/blast/cover_blast.html">
+            
+                    
+                    2.2.3 基因覆盖均一度
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    第三部分 差异分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    3.1 表达量分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="count_analyse.html">
+            
+                <a href="count_analyse.html">
+            
+                    
+                    3.1.1 表达量分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.1.2" data-path="fpkm_analyse.html">
+            
+                <a href="fpkm_analyse.html">
+            
+                    
+                    3.1.2 FPKM密度分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="correlation_analyse.html">
+            
+                <a href="correlation_analyse.html">
+            
+                    
+                    3.1.3 样品相关性检验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="pca_analyse.html">
+            
+                <a href="pca_analyse.html">
+            
+                    
+                    3.1.4 PCA分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../diff/">
+            
+                <a href="../diff/">
+            
+                    
+                    3.2 表达差异分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../diff/check_diff.html">
+            
+                <a href="../diff/check_diff.html">
+            
+                    
+                    3.2.1 样品差异表达检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../diff/genom_diff.html">
+            
+                <a href="../diff/genom_diff.html">
+            
+                    
+                    3.2.2 聚类分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../gokegg/">
+            
+                <a href="../gokegg/">
+            
+                    
+                    3.3 差异表达基因功能富集分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../gokegg/go_gokegg.html">
+            
+                <a href="../gokegg/go_gokegg.html">
+            
+                    
+                    3.3.1 GO富集分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../gokegg/kegg_gokegg.html">
+            
+                <a href="../gokegg/kegg_gokegg.html">
+            
+                    
+                    3.3.2 KEGG富集分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../appendix/">
+            
+                <a href="../../appendix/">
+            
+                    
+                    第四部分 附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >3.1.2 FPKM密度分布</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+<li><div><a href="#312-fpkm&#x5BC6;&#x5EA6;&#x5206;&#x5E03;">3.1.2 FPKM&#x5BC6;&#x5EA6;&#x5206;&#x5E03;</a><i></i></div></li>
+</ul>
+</div>
+
+<h1 id="312-fpkm&#x5BC6;&#x5EA6;&#x5206;&#x5E03;">3.1.2 FPKM&#x5BC6;&#x5EA6;&#x5206;&#x5E03;</h1>
+<p><font face="&#x5FAE;&#x8F6F;&#x96C5;&#x9ED1;">&#x2003;&#x2003;&#x4E00;&#x822C;&#x8BA4;&#x4E3A;&#x8F6C;&#x5F55;&#x7EC4;&#x7684;&#x8868;&#x8FBE;&#x5206;&#x6790;&#x5305;&#x62EC;&#x4E09;&#x4E2A;&#x6C34;&#x5E73;&#x5C42;&#x9762;&#xFF0C;&#x5373;&#x57FA;&#x56E0;&#x8868;&#x8FBE;&#x6C34;&#x5E73;&#xFF0C;&#x8F6C;&#x5F55;&#x672C;&#x8868;&#x8FBE;&#x6C34;&#x5E73;&#xFF0C;&#x5916;&#x663E;&#x5B50;&#x8868;&#x8FBE;&#x6C34;&#x5E73;&#x3002;&#x540C;&#x4E00;&#x4E2A;&#x57FA;&#x56E0;&#x4E0D;&#x540C;&#x526A;&#x5207;&#x5F62;&#x5F0F;&#x7684;&#x8868;&#x8FBE;&#xFF0C;&#x53EF;&#x80FD;&#x5F15;&#x8D77;&#x622A;&#x7136;&#x4E0D;&#x540C;&#x7684;&#x751F;&#x7269;&#x5B66;&#x6548;&#x5E94;&#x3002;FPKM&#x5BC6;&#x5EA6;&#x5206;&#x5E03;&#x80FD;&#x6574;&#x4F53;&#x5730;&#x8003;&#x5BDF;&#x6837;&#x54C1;&#x6240;&#x6709;&#x57FA;&#x56E0;&#x7684;&#x8868;&#x8FBE;&#x91CF;&#x6A21;&#x5F0F;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x4E2D;&#x7B49;&#x8868;&#x8FBE;&#x7684;&#x57FA;&#x56E0;&#x5360;&#x7EDD;&#x5927;&#x591A;&#x6570;&#xFF0C;&#x4F4E;&#x8868;&#x8FBE;&#x548C;&#x9AD8;&#x8868;&#x8FBE;&#x7684;&#x57FA;&#x56E0;&#x5360;&#x4E00;&#x5C0F;&#x90E8;&#x5206;&#x3002;&#x57FA;&#x56E0;&#x5728;&#x5404;&#x4E2A;&#x6837;&#x54C1;&#x4E2D;&#x7684;&#x8868;&#x8FBE;&#x91CF;&#x7279;&#x5F81;&#x7EDF;&#x8BA1;&#x7ED3;&#x679C;&#x89C1;&#x56FE;</font><br></p>
+<p><img src="asset/fpkm.png" alt="avatar">
+<img src="asset/fpkm_all.png" alt="avatar"></p>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="count_analyse.html" class="navigation navigation-prev " aria-label="Previous page: 3.1.1 表达量分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="correlation_analyse.html" class="navigation navigation-next " aria-label="Next page: 3.1.3 样品相关性检验">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.1.2 FPKM密度分布","level":"1.4.1.2","depth":3,"next":{"title":"3.1.3 样品相关性检验","level":"1.4.1.3","depth":3,"path":"analyse/count/correlation_analyse.md","ref":"analyse/count/correlation_analyse.md","articles":[]},"previous":{"title":"3.1.1 表达量分析","level":"1.4.1.1","depth":3,"path":"analyse/count/count_analyse.md","ref":"analyse/count/count_analyse.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mermaid-gb3","chapter-fold","expandable-chapters","popup","page-treeview","livereload"],"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"chapter-fold":{},"livereload":{},"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"file/logo.png","style":"background: none; max-height: 30px; min-height: 30px"},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"analyse/count/fpkm_analyse.md","mtime":"2021-03-19T00:46:49.176Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-06T10:46:10.180Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

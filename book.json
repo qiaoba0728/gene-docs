@@ -1,0 +1,15 @@
+{
+"plugins": [
+  "mermaid-gb3",
+  "chapter-fold",
+  "expandable-chapters",
+  "popup",
+  "page-treeview"
+],
+"pluginsConfig": {
+    	"insert-logo": {
+			"url": "file/logo.png",
+			"style": "background: none; max-height: 30px; min-height: 30px"
+		}
+	}
+}
