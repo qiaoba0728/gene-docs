@@ -1,19 +1,28 @@
 # 1.3 参考基因组
 
-## 参考基因组信息
 
-|      Genome      | Vitis_vinifera.12X.dna.toplevel.fa |
-| :--------------: | :--------------------------------: |
-|   Genebuild by   |              Ensembl               |
-| Database version |                96.3                |
-|    Base Pairs    |            486,175,922             |
+<p>&emsp;&emsp;下载参考基因组序列。参考基因组的统计结果如表1。</p>
 
-## 参考基因组注释信息
+<center><b>表1 参考基因组</b></center>
+<style>
+table th:first-of-type {
+    width: 30%;
+}
+table th:nth-of-type(2) {
+    width: 70%;
+}
+</style>
 
-| Database | Number | Percentage |
-| -------- | ------ | ---------- |
-| xxx      | 111    | 111        |
-| Xxx      | 111    | 111        |
-| Xxx      | 111    | 111        |
-| Xxx      | 111    | 111        |
-| xxx      | 111    | 111        |
+| 类别 | 数目 |
+| :---: | :---: |
+| Total_Len | {{geneDetail.totalLen}} |
+| Total_Seq_Num | {{geneDetail.totalSeqNum}} |
+| Total_N_Counts | {{geneDetail.totalNCounts}} |
+| Total_LowCase_Counts | {{geneDetail.totalLowCaseCounts}} |
+| Total_GC_content | {{geneDetail.totalGCContent}} |
+
+- Total_Len: 基因组长度
+- Total_Seq_Num: 基因组染色体数
+- Total_N_Counts: 未测通的碱基数
+- Total_LowCase_Counts: 重复序列的标志
+- Total_GC_content: GC含量
